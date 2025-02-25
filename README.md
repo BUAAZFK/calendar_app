@@ -23,7 +23,8 @@
   5) modify line 80 ~ 90 in './calendar_app/calendar_app/settings.py'
 
      `DATABASES = {
-        'default': {
+
+       'default': {
      
             'ENGINE': 'django.db.backends.mysql',  # 使用 MySQL
      
@@ -41,11 +42,11 @@
      
                 'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",  # 取消严格模式限制
      
-            }
-     
-        }
-     
-    }`
+              }
+       
+          }
+       
+      }`
 
 
 
