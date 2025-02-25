@@ -22,10 +22,7 @@
 
   5) modify line 80 ~ 90 in './calendar_app/calendar_app/settings.py'
 
-     `DATABASES = {
 
-       'default': {
-     
             'ENGINE': 'django.db.backends.mysql',  # 使用 MySQL
      
             'NAME': 'calendar',                    # 数据库名称
@@ -44,9 +41,7 @@
      
               }
        
-          }
-       
-      }`
+
 
 
 
