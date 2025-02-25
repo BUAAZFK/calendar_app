@@ -16,10 +16,14 @@
 
   2) `pip install mysqlclient==2.2.7`
 
-  3) modify line 80 ~ 90 in './calendar_app/calendar_app/settings.py'
+  3) create a mysql database named `calendar`
 
-     `DATABASES = { \\
-        'default': {\\
+  4) run in cmd under this project `python manage.py runserver`
+
+  5) modify line 80 ~ 90 in './calendar_app/calendar_app/settings.py'
+
+     `DATABASES = { <br>
+        'default': {<br>
             'ENGINE': 'django.db.backends.mysql',  # 使用 PostgreSQL\\
             'NAME': 'calendar',                    # 数据库名称\\
             'USER': 'root',                    # 数据库用户名\\
@@ -32,8 +36,6 @@
         }\\
     }`\\
 
-    4) create a mysql database named `calendar`
 
-    5) run in cmd under this project `python manage.py runserver`
 
 If you want to add other functions, welcome to share with me!
