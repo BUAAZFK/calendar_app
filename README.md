@@ -18,19 +18,19 @@
 
   3) modify line 80 ~ 90 in './calendar_app/calendar_app/settings.py'
 
-     `DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.mysql',  # 使用 PostgreSQL
-            'NAME': 'calendar',                    # 数据库名称
-            'USER': 'root',                    # 数据库用户名
-            'PASSWORD': 'your passwork of mysql',            # 数据库密码
-            'HOST': 'localhost',                       # 数据库主机，通常是localhost
-            'PORT': '3306',                            # 数据库端口，通常是5432
-            'OPTIONS': {
-                'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",  # 取消严格模式限制
-            }
-        }
-    }`
+     `DATABASES = { \\
+        'default': {\\
+            'ENGINE': 'django.db.backends.mysql',  # 使用 PostgreSQL\\
+            'NAME': 'calendar',                    # 数据库名称\\
+            'USER': 'root',                    # 数据库用户名\\
+            'PASSWORD': 'your passwork of mysql',            # 数据库密码\\
+            'HOST': 'localhost',                       # 数据库主机，通常是localhost\\
+            'PORT': '3306',                            # 数据库端口，通常是5432\\
+            'OPTIONS': {\\
+                'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",  # 取消严格模式限制\\
+            }\\
+        }\\
+    }`\\
 
     4) create a mysql database named `calendar`
 
